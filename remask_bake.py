@@ -21,7 +21,8 @@ from transformers import SegformerImageProcessor, SegformerForSemanticSegmentati
 ROOT = Path(__file__).resolve().parent
 BRUSH = ROOT / "brush" / "target" / "release" / "brush"
 HAIR = 13  # jonathandinu/face-parsing 'hair' class
-DEVICE = "mps" if torch.backends.mps.is_available() else "cpu"
+DEVICE = ("cuda" if torch.cuda.is_available()
+          else "mps" if torch.backends.mps.is_available() else "cpu")
 
 
 def hair_mask(img, proc, seg):
