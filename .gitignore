@@ -1,0 +1,26 @@
+# Cloned/built on the pod (huge) — not committed
+brush/
+.venv/
+
+# Generated data + artifacts (regenerated per run)
+recon/
+out/
+outputs/
+frames/
+__pycache__/
+*.pyc
+
+# Input captures (large / personal) — scp these to the pod separately
+in/
+
+# Big media / model files (belt-and-suspenders)
+*.ply
+*.mp4
+*.jpg
+*.jpeg
+*.png
+
+.DS_Store
+
+# IDE
+.idea/

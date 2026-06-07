@@ -1,0 +1,19 @@
+[package]
+name = "brush-orbit"
+edition.workspace = true
+version.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "brush-orbit"
+path = "src/main.rs"
+
+[dependencies]
+brush-render.path = "../../crates/brush-render"
+brush-serde.path = "../../crates/brush-serde"
+brush-process.path = "../../crates/brush-process"
+glam.workspace = true
+anyhow.workspace = true
+burn.workspace = true
+image = { workspace = true, features = ["png"] }
+tokio = { workspace = true, features = ["rt-multi-thread", "macros", "fs"] }

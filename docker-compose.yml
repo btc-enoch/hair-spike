@@ -1,0 +1,17 @@
+# Run with:
+#   export REPLICATE_API_TOKEN=r8_...
+#   docker compose run --rm hairswap --video in/clip.mov --style "short wavy bob"
+#
+# in/  -> drop your rotate clip here (read by the container)
+# out/ -> edited.mp4 + compare.mp4 land here, on your host, to view
+# frames/ -> intermediate orig_/edit_ frames, for inspection
+services:
+  hairswap:
+    build: .
+    image: hair-spike
+    environment:
+      - REPLICATE_API_TOKEN=${REPLICATE_API_TOKEN:?set REPLICATE_API_TOKEN in your shell first}
+    volumes:
+      - ./in:/app/in
+      - ./out:/app/out
+      - ./frames:/app/frames

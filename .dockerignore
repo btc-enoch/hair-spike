@@ -1,0 +1,7 @@
+in/*
+out/*
+frames/*
+*.mov
+*.mp4
+*.png
+.DS_Store
