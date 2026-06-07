@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# One-shot pod setup. Run ON a RunPod Linux/CUDA box after:
-#   git clone git@github.com:btc-enoch/hair-spike.git && cd hair-spike && ./bootstrap.sh
+# One-shot pod setup. Run ON a RunPod Linux/CUDA box after (repo is public — no auth):
+#   git clone https://github.com/btc-enoch/hair-spike.git && cd hair-spike && ./bootstrap.sh
 # Installs deps, builds Brush + our brush-orbit (Vulkan), sets up the python env.
 # Idempotent: safe to re-run.
 set -euo pipefail

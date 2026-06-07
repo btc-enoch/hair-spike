@@ -44,7 +44,7 @@ fixed by matching driver/`nvidia` packages, or fall back to the CUDA GS stack
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 source "$HOME/.cargo/env"
-git clone <OUR_REPO_URL> ~/hair-spike      # our scripts + apps/brush-orbit crate
+git clone https://github.com/btc-enoch/hair-spike.git ~/hair-spike   # public, no auth      # our scripts + apps/brush-orbit crate
 git clone --depth 1 https://github.com/ArthurBrussee/brush.git ~/hair-spike/brush
 # add our brush-orbit crate into the brush workspace:
 cp -r ~/hair-spike/brush-orbit ~/hair-spike/brush/apps/brush-orbit
