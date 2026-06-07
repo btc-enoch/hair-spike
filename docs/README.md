@@ -25,6 +25,7 @@ records a short **5-second rotate selfie video**, and the app applies a
 | [11-spike2-generative-tests.md](11-spike2-generative-tests.md) | **Spike 2 (2026-06-07):** generative edit quality + identity ✅; per-frame consistency ❌ → 3D bake mandatory. Path = iterative bake (option 2) |
 | [12-spike2-option2-scope.md](12-spike2-option2-scope.md) | **Scope for the iterative 3D bake** — loop, cloud stack (nerfstudio/igs2gs + Flux), risks, cost/time, decisions needed |
 | [13-runpod-runbook.md](13-runpod-runbook.md) | **RunPod on-demand GPU runbook** — launch RTX 4090, port Brush+pycolmap+scripts, run a bake, tear down; ~cents/run |
+| [14-production-architecture.md](14-production-architecture.md) | **Speed-optimised production design** — build-once feed-forward, on-device render, warm few-step GPU, caching; upgrade path from the spike |
 
 ## The one-paragraph summary
 
